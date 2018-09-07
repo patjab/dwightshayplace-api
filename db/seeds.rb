@@ -16,8 +16,8 @@ hard_hay_patches = [[0,0],[0,19],[0,25],[0,30],[0,31],[0,32],[0,37],[0,38],[0,39
 dwideschrude = User.create(username: 'dwideschrude')
 
 test_maze = Maze.create(difficulty: 'test', size: 6, initial_row: 3, initial_col: 0, maze_finish_row: 3, maze_finish_col: 5)
-easy_maze = Maze.create(difficulty: 'Parking Lot', size: 19, initial_row: 9, initial_col: 0, maze_finish_row: 9, maze_finish_col: 18)
-hard_maze = Maze.create(difficulty: 'Schrute Farms', size: 51, initial_row: 25, initial_col: 0, maze_finish_row: 25, maze_finish_col: 50)
+easy_maze = Maze.create(difficulty: 'Parking Lot', size: 19, initial_row: 9, initial_col: 0, maze_finish_row: 9, maze_finish_col: 18, image_url: '/media/dunderMifflinParking')
+hard_maze = Maze.create(difficulty: 'Schrute Farms', size: 51, initial_row: 25, initial_col: 0, maze_finish_row: 25, maze_finish_col: 50, image_url: '/media/schruteFarms')
 
 test_hay_patches.each do |coordinate|
   HayPatch.create(current_coordinate_row: coordinate[0], current_coordinate_col: coordinate[1], maze: test_maze)
